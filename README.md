@@ -13,7 +13,8 @@ JavaScript – Funcionalidades dinâmicas do site
 
 Caso deseje visualizar o projeto online, acesse:
 
-GitHub Page:
+GitHub Page: https://paulohlsena.github.io/SiteMarmitaria/
+Figma: https://www.figma.com/design/R9C1z380ygUZiaQxEBzJd1/Untitled?node-id=0-1&t=1KPbF1n5gd5evvYm-1
 
 📝 Funcionalidades
 
@@ -24,7 +25,7 @@ GitHub Page:
 
 🛠️ Como Executar o Projeto
 
-Clone este repositório: git clone https://github.com/paulohlsena/marmitaria.git
+Clone este repositório: git clone https://github.com/paulohlsena/SiteMarmitaria.git
 Abra o arquivo index.html no navegador.
 Pronto! O site estará funcionando localmente.
 
