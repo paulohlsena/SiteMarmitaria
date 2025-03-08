@@ -1,0 +1,278 @@
+:root {
+    --laranja-principal: #ff7708;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #fff;
+    height: 90px;
+    margin: 0; /* Remover margem para alinhar com a largura total */
+    border-radius: 16px;
+    padding: 0.5rem;
+    width: 100%; /* Garantir que a navbar ocupe 100% da largura */
+    box-sizing: border-box; /* Garantir que a largura da navbar inclua o padding */
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: var(--laranja-principal);
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+#logotipoNavbar {
+    width: 160px;
+}
+
+.banner {
+    margin-top: 100px; /* Ajuste a margem para a altura da navbar */
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+    height: 300px;
+    margin: auto; /* Centraliza */
+    object-fit: cover; /* Garantir que a imagem cubra a área sem distorcer */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.login-button {
+    background-color: var(--laranja-principal);
+    color: #FFF;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: #e06606; /* Melhor contraste no hover */
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link:active {
+    color: #000;
+}
+
+@media (min-width: 991px) {
+
+    .nav-link:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: var(--laranja-principal);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mt-4-5{
+    margin-top: 32px;
+}
+
+.marmitas {
+    padding: 50px 0;
+    text-align: center;
+}
+.scrollMarginTop{
+    scroll-margin-top: 100px;
+}
+/* Ajuste da largura dos cards para caberem 4 na mesma linha no desktop */
+.marmita-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: nowrap;
+    padding-top: 24px;
+}
+
+.card {
+    width: 25%; /* Mantém os 4 cards alinhados no desktop */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top{
+    height: 170px;
+}
+
+.card-plate-name{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.btn-outline-success{
+    width: 100%;
+    margin-top: 15px;
+}
+
+del{
+    color: #666777;
+}
+
+.kits-wrapper .marmita-container .card{
+    width: 50%;
+}
+
+.kits-wrapper .marmita-container .card:hover{
+    transform: scale(1.02);
+}
+
+.kits-wrapper .marmita-container .card img{
+    height: 210px;
+}
+
+/* Ajustes para mobile: Removida a limitação da quantidade de cards visíveis */
+@media (max-width: 991px) {
+    .marmita-wrapper {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .kits-wrapper .marmita-container{
+        flex-direction: column;
+    }
+
+    .kits-wrapper .marmita-container .card{
+        width: 100%;
+    }
+
+    .marmita-container, .fitness-container {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px; /* Espaçamento menor para melhor encaixe */
+    }
+
+    .card {
+        flex: 0 0 60%; /* Permite mais de dois cards, mas o primeiro fica totalmente visível */
+        scroll-snap-align: start;
+    }
+
+    .marmita-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .price{
+        display: flex;
+        justify-content: space-between;
+    }
+    .kits-wrapper .marmita-container .card img{
+        height: 150px;
+    }
+    .card-img-top{
+        height: 140px;
+    }
+}
+
+@media (min-width: 768px) {
+    .prato-container {
+        display: flex;
+        gap: 10px;
+    }
+    .prato-container input,
+    .prato-container select {
+        flex: 1;
+    }
+    .prato-desc {
+        flex: 2;
+    }
+    .prato-quantidade,
+    .prato-peso {
+        flex: 0.5;
+    }
+    .input-group {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .button-container button {
+        max-width: 200px; /* Ajuste o tamanho dos botões conforme necessário */
+    }
+}
+.footer{
+    height: 300px;
+    background-color: var(--laranja-principal);
+    margin-top: 25px;
+}
+.col-md-4 img {
+    width: 180px;
+}
+.footerOptions{
+    display: flex;
+    justify-content: space-between;
+    
+}
+@media (max-width: 768px) {
+    .marginBotomMobile {
+        margin-bottom: 50px; /* Adiciona espaço entre as seções no mobile */
+    }
+    h6{
+        text-align: center;
+    }
+}
+h6{
+    font-weight: 100;
+    font-size: 15px;
+    color: #adadad;
+}
+hr{
+    color: #666777;
+}

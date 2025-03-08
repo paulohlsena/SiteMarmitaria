@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saborê Marmitaria</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand me-auto" href="#"><img id="logotipoNavbar" src="assets/Images/logotipo.png" alt="Logotipo Saborê Marmitaria"></a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navegação</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#Marmitas">Marmitas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#Kits">Kits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#criarMenu">Crie seu Menu</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="login-button">Login</a>
+          <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+    </nav>
+    <!--End Navbar-->  
+
+    <!--Section Banner 1-->
+    <section class="banner">
+      <div class="container">
+          <img src="assets/Images/banner.png" class="img-fluid rounded" alt="Banner Saborê Marmitaria">
+      </div>
+    </section>
+    <!-- End Section Banner 1-->
+
+    <!--Section Carrossel Opções-->
+    <h2 class="text-center mt-4-5 title scrollMarginTop marmitaActive" id="Marmitas">MARMITAS</h2>
+    <section class="marmita-wrapper marmitaActive">
+      <div class="container">
+          <div class="marmita-container">
+              <div class="card">
+                  <img src="assets/Images/fitness.png" class="card-img-top" alt="Marmita 1">
+                  <div class="card-body">
+                      <h5 class="card-title">Fitness</h5>
+                      <p class="card-text">Refeições congeladas de 300g com ingredientes de baixo teor calórico.</p>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="assets/Images/vegano.png" class="card-img-top" alt="Marmita 2">
+                  <div class="card-body">
+                      <h5 class="card-title">Vegano</h5>
+                      <p class="card-text">Refeições livres de ingredientes de origem animal. De 300 ou 500g.</p>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="assets/Images/diadia.png" class="card-img-top" alt="Marmita 3">
+                  <div class="card-body">
+                      <h5 class="card-title">Dia a dia</h5>
+                      <p class="card-text">Refeições de 500g para o dia a dia. Pratos típicos da culinária paulistana.</p>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="assets/Images/menu.png" class="card-img-top" alt="Marmita 4">
+                  <div class="card-body">
+                      <h5 class="card-title">Crie seu menu</h5>
+                      <p class="card-text">Personalize suas refeições. Escolha seu ingredientes preferidos.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!--END Section Carrossel Opções-->
+
+    <!--Section Carrossel Fitness-->
+    <h2 class="text-center mt-4-5 title scrollMarginTop marmitaActive" id="Fitness">FITNESS</h2>
+    <section class="marmita-wrapper marmitaActive">
+      <div class="container">
+        <div class="marmita-container">
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="marmita-wrapper marmitaActive" >
+      <div class="container">
+        <div class="marmita-container">
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!--END Section Carrossel Fitness-->
+
+    <!--Section Carrossel Vegan-->
+    <h2 class="text-center mt-4-5 title scrollMarginTop marmitaActive" id="Vegano">VEGANO</h2>
+    <section class="marmita-wrapper marmitaActive">
+      <div class="container">
+        <div class="marmita-container">
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="marmita-wrapper marmitaActive">
+      <div class="container">
+        <div class="marmita-container">
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!--END Section Carrossel Vegan-->
+
+    <!--Section Carrossel Dia a dia-->
+    <h2 class="text-center mt-4-5 title scrollMarginTop marmitaActive" id="diaADia">DIA A DIA</h2>
+    <section class="marmita-wrapper marmitaActive">
+      <div class="container">
+        <div class="marmita-container">
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+            <div class="card-body">
+              <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+              <del class="card-text">R$ 15,00</del>
+              <div class="price">
+                <div>R$ 13,00</div>
+                <div>300G</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="marmita-wrapper marmitaActive">
+          <div class="container">
+            <div class="marmita-container">
+              <div class="card">
+                <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+                <div class="card-body">
+                  <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+                  <del class="card-text">R$ 15,00</del>
+                  <div class="price">
+                    <div>R$ 13,00</div>
+                    <div>300G</div>
+                  </div>
+                  <button type="button" class="btn btn-outline-success">Adicionar</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+                <div class="card-body">
+                  <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+                  <del class="card-text">R$ 15,00</del>
+                  <div class="price">
+                    <div>R$ 13,00</div>
+                    <div>300G</div>
+                  </div>
+                  <button type="button" class="btn btn-outline-success">Adicionar</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+                <div class="card-body">
+                  <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+                  <del class="card-text">R$ 15,00</del>
+                  <div class="price">
+                    <div>R$ 13,00</div>
+                    <div>300G</div>
+                  </div>
+                  <button type="button" class="btn btn-outline-success">Adicionar</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+                <div class="card-body">
+                  <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+                  <del class="card-text">R$ 15,00</del>
+                  <div class="price">
+                    <div>R$ 13,00</div>
+                    <div>300G</div>
+                  </div>
+                  <button type="button" class="btn btn-outline-success">Adicionar</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/Images/arrozIntegralSalmao.jpg" class="card-img-top" alt="Marmita 1">
+                <div class="card-body">
+                  <h5 class="card-plate-name">Patinho moído com purê de mandioquinha</h5>
+                  <del class="card-text">R$ 15,00</del>
+                  <div class="price">
+                    <div>R$ 13,00</div>
+                    <div>300G</div>
+                  </div>
+                  <button type="button" class="btn btn-outline-success">Adicionar</button>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+    </section>
+    <!--END Section Carrossel Dia a dia-->
+
+    <!--Section KITS-->
+    <h2 class="text-center mt-4-5 title scrollMarginTop kitsActive" id="Kits">KITS</h2>
+    <section class="kits-wrapper kitsActive">
+      <div class="container">
+        <div class="marmita-container">
+          <div class="card mb-3">
+            <img src="assets/Images/kitsMarmitas.png" class="card-img-top" alt="fundo cinza">
+            <div class="card-body">
+              <h5 class="card-title">Kit Fitness - 20 Marmitas</h5>
+              <p class="card-text">Com 20 marmitas de 300g, você recebe 4 pratos diferentes, com 5 unidades de cada. Uma opção deliciosa e equilibrada para sua semana, com a qualidade e sabor que você merece.</p>
+              <div class="price">
+                <div>R$ 230,00</div>
+                <div>R$ 11,50 Unidade</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <img src="assets/Images/kitsMarmitas.png" class="card-img-top" alt="fundo cinza">
+            <div class="card-body">
+              <h5 class="card-title">Kit Vegan - 20 Marmitas</h5>
+              <p class="card-text">Com 20 marmitas de 300g, você recebe 4 pratos diferentes, com 5 unidades de cada. Uma opção deliciosa e equilibrada para sua semana, com a qualidade e sabor que você merece.</p>
+              <div class="price">
+                <div>R$ 230,00</div>
+                <div>R$ 11,50 Unidade</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+    <section class="kits-wrapper kitsActive">
+      <div class="container">
+        <div class="marmita-container">
+          <div class="card mb-3">
+            <img src="assets/Images/kitsMarmitas.png" class="card-img-top" alt="fundo cinza">
+            <div class="card-body">
+              <h5 class="card-title">Kit Fitness - 20 Marmitas</h5>
+              <p class="card-text">Com 20 marmitas de 300g, você recebe 4 pratos diferentes, com 5 unidades de cada. Uma opção deliciosa e equilibrada para sua semana, com a qualidade e sabor que você merece.</p>
+              <div class="price">
+                <div>R$ 230,00</div>
+                <div>R$ 11,50 Unidade</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <img src="assets/Images/kitsMarmitas.png" class="card-img-top" alt="fundo cinza">
+            <div class="card-body">
+              <h5 class="card-title">Kit Vegan - 20 Marmitas</h5>
+              <p class="card-text">Com 20 marmitas de 300g, você recebe 4 pratos diferentes, com 5 unidades de cada. Uma opção deliciosa e equilibrada para sua semana, com a qualidade e sabor que você merece.</p>
+              <div class="price">
+                <div>R$ 230,00</div>
+                <div>R$ 11,50 Unidade</div>
+              </div>
+              <button type="button" class="btn btn-outline-success">Adicionar</button>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+    <!--END Section KITS-->
+
+    <!--Section Criar Menu-->
+    <h2 class="text-center mt-4-5 title scrollMarginTop menuActive" id="criarMenu">CRIE SEU MENU</h2>
+    <section class="menuActive">
+      <p class="text-center text-muted">Pedido mínimo: 5 marmitas | Máximo de 3 ingredientes por prato</p>
+      <div class="container mt-5">
+        <form class="row g-3" id="pedidoForm">
+          <div class="col-md-4">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" required>
+          </div>
+          <div class="col-md-4">
+              <label for="bairro" class="form-label">Bairro</label>
+              <input type="text" class="form-control" id="bairro" required>
+          </div>
+          <div class="col-md-4">
+              <label for="pagamento" class="form-label">Forma de Pagamento</label>
+              <select class="form-select" id="pagamento" required>
+                  <option selected disabled>Escolha...</option>
+                  <option value="Pix">Pix</option>
+                  <option value="Cartão">Cartão</option>
+                  <option value="Dinheiro">Dinheiro</option>
+              </select>
+          </div>
+          <div class="col-12">
+              <h5>Pratos Escolhidos</h5>
+              <div id="pratosContainer"></div>
+              <div class="button-container mt-3">
+                  <button type="button" class="btn btn-primary" id="adicionarPrato">+ Adicionar Prato</button>
+                  <button type="button" class="btn btn-danger" id="limparFormulario">Limpar Campos</button>
+              </div>
+          </div>
+
+          <div class="col-12 text-center mt-4">
+              <button type="submit" class="btn btn-success">Solicitar cotação via WhatsApp</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--End Section Criar Menu-->
+    
+    <!--Script Criar Menu-->
+    <script>
+      function adicionarPrato() {
+          let container = document.getElementById("pratosContainer");
+          let pratoHTML = `
+              <div class="d-flex align-items-center gap-3 border p-3 mb-3 bg-light flex-wrap prato-container">
+                  <input type="text" class="form-control prato-desc" placeholder="Descreva o prato: Arroz, feijão e frango - Máximo 3 ingredientes" required style="flex-grow: 1;">
+                  <input type="number" class="form-control prato-quantidade" min="5" placeholder="Quantidade" required style="max-width: 200px;">
+                  <select class="form-select prato-peso" required style="max-width: 150px;">
+                      <option value="300g">300g</option>
+                      <option value="500g">500g</option>
+                  </select>
+              </div>
+          `;
+          container.insertAdjacentHTML("beforeend", pratoHTML);
+      }
+  
+      document.getElementById("adicionarPrato").addEventListener("click", adicionarPrato);
+  
+      document.getElementById("limparFormulario").addEventListener("click", function() {
+          // Limpar os campos de entrada principais
+          document.getElementById("nome").value = "";
+          document.getElementById("bairro").value = "";
+          document.getElementById("pagamento").value = "Escolha..."; // Valor inicial
+  
+          // Limpar os campos de marmitas e excluir os formulários adicionados
+          let pratosContainer = document.getElementById("pratosContainer");
+          pratosContainer.innerHTML = ""; // Apagar todos os pratos
+      });
+  
+      document.addEventListener("DOMContentLoaded", adicionarPrato);
+  
+      document.getElementById("pedidoForm").addEventListener("submit", function(event) {
+          event.preventDefault();
+          
+          let nome = document.getElementById("nome").value.trim();
+          let bairro = document.getElementById("bairro").value.trim();
+          let pagamento = document.getElementById("pagamento").value;
+          let pratos = document.querySelectorAll("#pratosContainer .d-flex");
+          
+          let pratosTexto = "";
+          pratos.forEach((prato, index) => {
+              let desc = prato.querySelector(".prato-desc").value.trim();
+              let qtd = prato.querySelector(".prato-quantidade").value;
+              let peso = prato.querySelector(".prato-peso").value;
+              pratosTexto += `${index + 1}️⃣ ${desc} (${peso}) - ${qtd} unidades\n`;
+          });
+          
+          let mensagem = `🍽️ *Pedido de Cardápio Personalizado*\n` +
+                         `👤 *Nome:* ${nome}\n` +
+                         `📍 *Bairro:* ${bairro}\n` +
+                         `💳 *Forma de Pagamento:* ${pagamento}\n\n` +
+                         `🍛 *Pratos Escolhidos:*\n${pratosTexto}`;
+          
+          let numeroWhatsApp = "55 11 96608-8559"; // Substitua pelo número correto
+          let link = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensagem)}`;
+          
+          window.open(link, "_blank");
+      });
+    </script>
+    <!--End Script Criar Menu-->  
+    
+    <!--Section Footer-->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+          <div class="row text-center text-md-start">
+              <div class="col-md-4 marginBotomMobile">
+                  <img src="assets/Images/logoCircular.png" alt="Logo">
+              </div>
+              <div class="col-md-4 marginBotomMobile">
+                  <h5 class="mb-3 text-center">Venha conhecer</h5>
+                  <div class="footerOptions d-flex flex-column flex-md-row justify-content-between">
+                      <div class="d-flex flex-column">
+                          <a href="#" class="text-white mt-2">Primeira compra</a>
+                          <a href="#" class="text-white mt-2">Regiões de entrega</a>
+                          <a href="#" class="text-white mt-2">Facebook</a>
+                          <a href="#" class="text-white mt-2">Dúvidas frequentes</a>
+                      </div>
+                      <div class="d-flex flex-column mt-3 mt-md-0 text-md-end">
+                          <a href="#" class="text-white mt-2">Primeira compra</a>
+                          <a href="#" class="text-white mt-2">Regiões de entrega</a>
+                          <a href="#" class="text-white mt-2">Facebook</a>
+                          <a href="#" class="text-white mt-2">Dúvidas frequentes</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                  <h5 class="mb-3">Contato</h5>
+                  <p class="mt-2 mb-1">contato@suamarmitaria.com</p>
+                  <p class="mb-1">(11) 99999-9999</p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg>
+                  </p>
+              </div>
+          </div>
+          <div class="row mt-4">
+            <hr>
+            <h6 class="">Copyright © PauloSena. Todos os direitos reservados.</h6>
+          </div>
+      </div>
+    </footer>
+    <!--End Section Footer-->
+
+    <!--Script Close Mobile Menu-->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var offcanvasNavbar = document.getElementById("offcanvasNavbar");
+            var navLinks = document.querySelectorAll(".nav-link");
+      
+            navLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    var bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasNavbar);
+                    if (bsOffcanvas) {
+                        bsOffcanvas.hide(); // Fecha o menu offcanvas
+                    }
+                });
+            });
+        });
+      </script>
+    <!--End Script Close Mobile Menu-->
+
+    <!--Script active menu-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const sections = document.querySelectorAll(".marmitaActive, .kitsActive, .menuActive"); // Seções que ativam os links
+          const navLinks = document.querySelectorAll(".nav-link"); // Links do navbar
+          const inicioLink = document.querySelector(".nav-link[href='#']"); // Link "Início"
+          const marmitasLink = document.querySelector(".nav-link[href='#Marmitas']"); // Link "Marmitas"
+          const kitsLink = document.querySelector(".nav-link[href='#Kits']"); // Link "Kits"
+          const menuLink = document.querySelector(".nav-link[href='#criarMenu']"); // Link "Crie seu Menu"
+          const offcanvasNavbar = document.getElementById("offcanvasNavbar"); // Menu offcanvas
+      
+          function changeActiveLink() {
+              let scrollPosition = window.scrollY + 150; // Ajuste para navbar fixo
+              let activeLink = inicioLink; // Começa com "Início" ativo
+      
+              sections.forEach((section) => {
+                  const sectionTop = section.offsetTop;
+                  const sectionHeight = section.offsetHeight;
+      
+                  if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                      if (section.classList.contains("marmitaActive")) {
+                          activeLink = marmitasLink;
+                      } else if (section.classList.contains("kitsActive")) {
+                          activeLink = kitsLink;
+                      } else if (section.classList.contains("menuActive")) {
+                          activeLink = menuLink;
+                      }
+                  }
+              });
+      
+              // Remove todas as classes "active"
+              navLinks.forEach(link => link.classList.remove("active"));
+      
+              // Adiciona "active" ao link correto
+              activeLink.classList.add("active");
+          }
+      
+          // Fecha o menu offcanvas ao clicar em um link
+          navLinks.forEach(function (link) {
+              link.addEventListener("click", function () {
+                  var bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasNavbar);
+                  if (bsOffcanvas) {
+                      bsOffcanvas.hide(); // Fecha o menu offcanvas
+                  }
+              });
+          });
+      
+          window.addEventListener("scroll", changeActiveLink);
+          changeActiveLink(); // Define o estado inicial
+      });
+      </script>
+      
+    <!--END Script active menu-->  
+      
+      
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
